@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
     echo "Copying headers..."
     rm -rf "${BASEPATH}/opensslIncludes/"
     mkdir -p "${BASEPATH}/opensslIncludes/"
-    cp -RL "${CURRENTPATH}/openssl-${VERSION}/include/openssl" "${BASEPATH}/opensslIncludes/"
+    cp -RL "${CURRENTPATH}/${VERSION}/include/openssl" "${BASEPATH}/opensslIncludes/"
 
     cd "${BASEPATH}"
     echo "Building done."
