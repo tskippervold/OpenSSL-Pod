@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     DEVELOPER=`xcode-select -print-path`
 
     mkdir -p "${CURRENTPATH}"
-    mkdir -p "${CURRENTPATH}/${VERSION}
+    mkdir -p "${CURRENTPATH}/${VERSION}"
     mkdir -p "${CURRENTPATH}/bin"
 
     cp -r . "${CURRENTPATH}/${VERSION}"
