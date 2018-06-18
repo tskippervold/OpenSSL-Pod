@@ -91,5 +91,5 @@ Pod::Spec.new do |s|
 
   s.libraries             = 'crypto', 'ssl'
   s.requires_arc          = false
-
+  s.static_framework      = true
 end
