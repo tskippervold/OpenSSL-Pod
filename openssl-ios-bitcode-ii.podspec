@@ -77,6 +77,10 @@ Pod::Spec.new do |s|
     mkdir -p "${BASEPATH}/opensslIncludes/"
     cp -RL "${CURRENTPATH}/${VERSION}/include/openssl" "${BASEPATH}/opensslIncludes/"
 
+    echo "Fixing headers..."
+    cd "${BASEPATH}/opensslIncludes/openssl"
+    sed -ie 's/BIGNUM \*I/BIGNUM \*i/g' rsa.h 
+
     cd "${BASEPATH}"
     echo "Building done."
 
