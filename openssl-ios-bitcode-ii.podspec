@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "openssl-ios-bitcode-ii"
-  s.version         = "1.0.215.1"
+  s.version         = "1.0.215.2"
   s.summary         = "OpenSSL is an SSL/TLS and Crypto toolkit. Deprecated in Mac OS and gone in iOS, this spec gives your project non-deprecated OpenSSL support."
   s.author          = "OpenSSL Project <openssl-dev@openssl.org>"
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
 
     echo "Fixing headers..."
     cd "${BASEPATH}/opensslIncludes/openssl"
-    sed -ie 's/BIGNUM \*I/BIGNUM \*i/g' rsa.h 
+    sed -ie 's/BIGNUM \\*I/BIGNUM \\*i/g' rsa.h 
 
     cd "${BASEPATH}"
     echo "Building done."
