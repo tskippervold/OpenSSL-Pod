@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "openssl-ios-bitcode-ii"
-  s.version         = "1.0.215"
+  s.version         = "1.0.215.1"
   s.summary         = "OpenSSL is an SSL/TLS and Crypto toolkit. Deprecated in Mac OS and gone in iOS, this spec gives your project non-deprecated OpenSSL support."
   s.author          = "OpenSSL Project <openssl-dev@openssl.org>"
 
