@@ -6,13 +6,13 @@ Pod::Spec.new do |s|
 
   s.homepage        = "https://github.com/tskippervold/OpenSSL-Pod.git"
   s.license         = 'BSD-style Open Source'
-  s.source          = { :http => "https://www.openssl.org/source/openssl-1.1.1d.tar.gz", :sha1 => "056057782325134b76d1931c48f2c7e6595d7ef4" }
+  s.source          = { :http => "https://www.openssl.org/source/openssl-1.0.2o.tar.gz", :sha1 => "a47faaca57b47a0d9d5fb085545857cc92062691" }
   s.source_files    = "opensslIncludes/openssl/*.h"
   s.header_dir      = "openssl"
   s.license	        = { :type => 'OpenSSL (OpenSSL/SSLeay)', :file => 'LICENSE' }
 
   s.prepare_command = <<-CMD
-    VERSION="1.1.1d"
+    VERSION="1.0.2o"
     SDKVERSION=`xcrun --sdk iphoneos --show-sdk-version 2> /dev/null`
     MIN_SDKVERSION="7.0"
 
